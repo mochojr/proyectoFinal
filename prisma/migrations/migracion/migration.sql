@@ -3,7 +3,7 @@ CREATE TABLE "usuarios" (
     "id" SERIAL NOT NULL,
     "genero" TEXT NOT NULL,
     "first_name" TEXT NOT NULL,
-    "last _name" TEXT NOT NULL,
+    "last_name" TEXT NOT NULL,
     "email" TEXT NOT NULL,
     "address" TEXT NOT NULL,
     "nickName" TEXT NOT NULL,
@@ -21,3 +21,4 @@ CREATE UNIQUE INDEX "usuarios_email_key" ON "usuarios"("email");
 
 -- CreateIndex
 CREATE UNIQUE INDEX "usuarios_nickName_key" ON "usuarios"("nickName");
+

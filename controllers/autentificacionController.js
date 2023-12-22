@@ -54,7 +54,7 @@ export const autentificacionController = () => {
       }
       const token = jwt.sign({
         name: usuario.firstName
-      }, process.env.SECRET_KEY, { expiresIn: '10d' })
+      }, process.env.SECRET_KEY, { expiresIn: '10h' })
 
       return res.status(httpStatus.OK).json({
         message: 'Logeado correctamente',

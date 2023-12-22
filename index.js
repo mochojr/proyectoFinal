@@ -29,7 +29,7 @@ app.use(
   })
 )
 
-app.use('/api', autentificacionRoutes, usuarioRoutes())
+app.use('/api', autentificacionRoutes(), usuarioRoutes())
 
 app.use(errorHandler)
 

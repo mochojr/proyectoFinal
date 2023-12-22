@@ -7,16 +7,19 @@ export const usuarioBodySchema = Joi.object({
     .trim()
     .regex(/[a-zA-Z]/)
     .required(),
-  firstName: Joi.string()
+  first_name: Joi.string()
     .min(3)
     .regex(/[a-zA-Z]/)
     .required(),
-  lastName: Joi.string()
+  last_name: Joi.string()
     .min(3)
     .regex(/[a-zA-Z]/)
     .required(),
   email: Joi.string()
-    .email({ minDomainSegments: 2, tlds: { allow: ['com', 'net'] } })
+    .min(3)
+    .regex(/[a-zA-Z]/)
+    /* .email
+     ({ minDomainSegments: 2, tlds: { allow: ['com', 'net'] } }) */
     .required(),
   address: Joi.string()
     .min(3)

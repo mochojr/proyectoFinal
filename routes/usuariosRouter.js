@@ -15,7 +15,7 @@ export const usuarioRoutes = () => {
 
   usuarioRouter.route('/usuarios')
     .get(getUsuarios)
-    .post(usuarioValidation, createUsuario)
+    .post(/* usuarioValidation, */createUsuario)
 
   usuarioRouter.route('/usuarios/:id')
     .get(usuarioParamValidation, getUsuarioById)
